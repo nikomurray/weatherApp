@@ -1,0 +1,101 @@
+:root {
+    --color-white: #fefae0;
+    --color-dark-green: #283618;
+    --border-r: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--color-white);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background: url(./img/forestbg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    padding: 4rem 0;
+    width: 90%;
+    max-width: 1300px;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 2rem 0;
+    width: fit-content;
+    padding: 1rem 3rem;
+    border-radius: var(--border-r);
+    font-weight: 700;
+    text-shadow:  0 0 5px #000;
+}
+
+.input-container , .output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.output-container {
+    visibility: hidden;
+    margin-top: 4rem;
+    padding: 1rem 3rem;
+    background-color: rgba(0, 0, 0, 0.496);
+    border-radius: var(--border-r);
+    box-shadow: 0 0 5px #ffffffc4;
+    transition: all 0.2s;
+}
+
+.output-container p:first-child{
+    font-size: 3.2rem;
+}
+
+.output-container p:nth-child(2){
+    font-size: 3rem;
+}
+
+.output-container p:nth-child(3){
+    font-size: 2rem;
+}
+
+.output-container p:nth-child(4){
+    font-size: 1.6rem;
+}
+.city-input {
+    padding: 0.5rem;
+    background: #000000bb;
+    border: none;
+    border-radius: var(--border-r);
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.get-weather {
+    cursor: pointer;
+    background: var(--color-dark-green);
+    border: none;
+    border-radius: var(--border-r);
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+    transition: all 0.2s;
+}
+
+.get-weather:hover {
+    box-shadow: 0 0 5px #fff;
+}
